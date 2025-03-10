@@ -1,0 +1,16 @@
+0.数据集格式：
+       0    		 1     		2     		    3      		 	    4
+index（没用） 游戏名	      评论	    1好评-1差评	0推荐1不推荐（即评论认可度）
+
+1.final由170万条评论组成，其中每款游戏的评论数均不小于一万
+2.该数据集经过了粗筛，去掉了失效评论（如 Early Access Review），去除携带网址的评论，并进行了lemmatize，不过并没有特别细致的内容审查。
+stopwords没去除了，好像tfidfvectorizer（stopwords="english"）就能直接去掉。
+3.其中分出的50payday2数据集好差评1：1，这部分数据集有大约52000条
+4.50payday2unique数据集好差评1：1，这部分数据又进行了去重，有约30000条，但是请注意，其中的好评数据并不一致。
+5.如果需要重新随机获取数据集，可以采用这行代码：
+dataset = pd.read_csv
+dataset = dataset.sample(你需要的评论总数)
+6.如果需要获得特定列特定值的数据：
+dataset = dataset[dataset[datset.columns[第几列]]==”特定评论或是数字或是什么“ ]
+7.如果单纯需要评论/游戏名/好差评等：
+dataset = dataset[datset.columns[对应列编号]]

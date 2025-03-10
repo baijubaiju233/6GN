@@ -1,0 +1,110 @@
+git-lfs/3.5.1 (GitHub; windows amd64; go 1.21.7; git e237bb3a)
+git version 2.45.1.windows.1
+
+$ git-lfs.exe filter-process
+Error downloading object: workplace/50 PAYDAY2 with unique reviews.csv (7dc1565): Smudge error: Error downloading workplace/50 PAYDAY2 with unique reviews.csv (7dc15654e2fedf18fbc4ce81f7fbcdfe2c84052f187789abc1f0c5c7cabfb216): batch response: This repository is over its data quota. Account responsible for LFS bandwidth should purchase more data packs to restore access.
+
+This repository is over its data quota. Account responsible for LFS bandwidth should purchase more data packs to restore access.
+batch response
+github.com/git-lfs/git-lfs/v3/errors.newWrappedError
+	github.com/git-lfs/git-lfs/v3/errors/types.go:229
+github.com/git-lfs/git-lfs/v3/errors.Wrap
+	github.com/git-lfs/git-lfs/v3/errors/errors.go:74
+github.com/git-lfs/git-lfs/v3/tq.(*tqClient).Batch
+	github.com/git-lfs/git-lfs/v3/tq/api.go:97
+github.com/git-lfs/git-lfs/v3/tq.Batch
+	github.com/git-lfs/git-lfs/v3/tq/api.go:45
+github.com/git-lfs/git-lfs/v3/tq.(*TransferQueue).enqueueAndCollectRetriesFor
+	github.com/git-lfs/git-lfs/v3/tq/transfer_queue.go:581
+github.com/git-lfs/git-lfs/v3/tq.(*TransferQueue).collectBatches.func1
+	github.com/git-lfs/git-lfs/v3/tq/transfer_queue.go:470
+runtime.goexit
+	runtime/asm_amd64.s:1650
+Error downloading workplace/50 PAYDAY2 with unique reviews.csv (7dc15654e2fedf18fbc4ce81f7fbcdfe2c84052f187789abc1f0c5c7cabfb216)
+github.com/git-lfs/git-lfs/v3/errors.newWrappedError
+	github.com/git-lfs/git-lfs/v3/errors/types.go:229
+github.com/git-lfs/git-lfs/v3/errors.Wrapf
+	github.com/git-lfs/git-lfs/v3/errors/errors.go:85
+github.com/git-lfs/git-lfs/v3/lfs.(*GitFilter).downloadFile
+	github.com/git-lfs/git-lfs/v3/lfs/gitfilter_smudge.go:134
+github.com/git-lfs/git-lfs/v3/lfs.(*GitFilter).Smudge
+	github.com/git-lfs/git-lfs/v3/lfs/gitfilter_smudge.go:85
+github.com/git-lfs/git-lfs/v3/commands.smudge
+	github.com/git-lfs/git-lfs/v3/commands/command_smudge.go:128
+github.com/git-lfs/git-lfs/v3/commands.filterCommand
+	github.com/git-lfs/git-lfs/v3/commands/command_filter_process.go:131
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.7.0/command.go:944
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.7.0/command.go:1068
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.7.0/command.go:992
+github.com/git-lfs/git-lfs/v3/commands.Run
+	github.com/git-lfs/git-lfs/v3/commands/run.go:154
+main.main
+	github.com/git-lfs/git-lfs/v3/git-lfs.go:34
+runtime.main
+	runtime/proc.go:267
+runtime.goexit
+	runtime/asm_amd64.s:1650
+Smudge error
+github.com/git-lfs/git-lfs/v3/errors.newWrappedError
+	github.com/git-lfs/git-lfs/v3/errors/types.go:229
+github.com/git-lfs/git-lfs/v3/errors.NewSmudgeError
+	github.com/git-lfs/git-lfs/v3/errors/types.go:315
+github.com/git-lfs/git-lfs/v3/lfs.(*GitFilter).Smudge
+	github.com/git-lfs/git-lfs/v3/lfs/gitfilter_smudge.go:102
+github.com/git-lfs/git-lfs/v3/commands.smudge
+	github.com/git-lfs/git-lfs/v3/commands/command_smudge.go:128
+github.com/git-lfs/git-lfs/v3/commands.filterCommand
+	github.com/git-lfs/git-lfs/v3/commands/command_filter_process.go:131
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.7.0/command.go:944
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.7.0/command.go:1068
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.7.0/command.go:992
+github.com/git-lfs/git-lfs/v3/commands.Run
+	github.com/git-lfs/git-lfs/v3/commands/run.go:154
+main.main
+	github.com/git-lfs/git-lfs/v3/git-lfs.go:34
+runtime.main
+	runtime/proc.go:267
+runtime.goexit
+	runtime/asm_amd64.s:1650
+
+Current time in UTC:
+2025-03-06 14:08:40
+
+Environment:
+LocalWorkingDir=D:\PycharmProjects\6GN-2\6GN-GameRatingPrediction
+LocalGitDir=D:\PycharmProjects\6GN-2\6GN-GameRatingPrediction\.git
+LocalGitStorageDir=D:\PycharmProjects\6GN-2\6GN-GameRatingPrediction\.git
+LocalMediaDir=D:\PycharmProjects\6GN-2\6GN-GameRatingPrediction\.git\lfs\objects
+LocalReferenceDirs=
+TempDir=D:\PycharmProjects\6GN-2\6GN-GameRatingPrediction\.git\lfs\tmp
+ConcurrentTransfers=8
+TusTransfers=false
+BasicTransfersOnly=false
+SkipDownloadErrors=false
+FetchRecentAlways=false
+FetchRecentRefsDays=7
+FetchRecentCommitsDays=0
+FetchRecentRefsIncludeRemotes=true
+PruneOffsetDays=3
+PruneVerifyRemoteAlways=false
+PruneVerifyUnreachableAlways=false
+PruneRemoteName=origin
+LfsStorageDir=D:\PycharmProjects\6GN-2\6GN-GameRatingPrediction\.git\lfs
+AccessDownload=none
+AccessUpload=none
+DownloadTransfers=basic,lfs-standalone-file,ssh
+UploadTransfers=basic,lfs-standalone-file,ssh
+GIT_CLONE_PROTECTION_ACTIVE=true
+GIT_CLONE_TEMPLATE_DIR=C:/Program Files/Git/mingw64/share/git-core/templates
+GIT_DIR=D:/PycharmProjects/6GN-2/6GN-GameRatingPrediction/.git
+GIT_EXEC_PATH=C:/Program Files/Git/mingw64/libexec/git-core
+
+Client IP addresses:
+fe80::dab5:855c:c802:745f 10.91.112.245
+2001:0:2851:fcb0:204e:7bfd:64ba:3ec0 fe80::204e:7bfd:64ba:3ec0
